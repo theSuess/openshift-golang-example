@@ -12,5 +12,5 @@ func main() {
 		_, err := ctx.WriteString(`<html><body style="background-color: red"></body></html>`)
 		return err
 	})
-	app.ListenAndServe()
+	app.ListenAndServe(":8080")
 }
